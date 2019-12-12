@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Realidad Aumentada</title>
+
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+    
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+
+
+    <div class="sound" id="display">
+        <button class="button" onclick="playAudio()" type="button">
+            <img src="Img Play.png" alt="play">
+        </button>
+        <audio id="play" loop>
+            <source src="navida.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+
+    <a-scene>
+
+
+
+    </a-scene>
+
+    <script>
+
+        var play = document.getElementById("play");
+
+        function playAudio() {
+            play.play();
+            if(play.play()){
+                document.getElementById("display").style.display = "none";
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>
